@@ -36,7 +36,7 @@ var _ = Describe("Client", func() {
 		Expect(err).NotTo(HaveOccurred())
 		Expect(lock1.Token()).To(HaveLen(22))
 		Expect(lock1.TTL()).To(BeNumerically("~", time.Hour, time.Second))
-		defer lock1.Release()
+		defer func() { _ = lock1.Release() }()
 
 		_, err = subject.Obtain(lockKey, time.Hour, nil)
 		Expect(err).To(Equal(redislock.ErrNotObtained))
