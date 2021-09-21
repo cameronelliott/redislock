@@ -10,7 +10,7 @@ For more information, please see examples.
 
 ## Motivation
 
-I came across a concurrency issue when multiple clients were accessing single redis instance. So I wanted a primitive locking solution, but redis did not have one implemented. So started looking for open source libraries and found [redislock](https://github.com/bsm/redislock) very well written and effective library. But it still did not solve my problem as I was using [redigo](https://github.com/garyburd/redigo) client but the package used [go-redis](https://github.com/go-redis/redis). Although `redigo` had [`redsync`](https://github.com/go-redsync/redsync), I wanted a much more simpler one and so with `redislock`.
+I came across a concurrency issue when multiple clients were accessing single redis instance. So I wanted a primitive locking solution, but redis did not have one implemented. So started looking for open source libraries and found [redislock](https://github.com/bsm/redislock) very well written and effective library. But it still did not solve my problem as I was using [redigo](https://github.com/gomodule/redigo) client but the package used [go-redis](https://github.com/go-redis/redis). Although `redigo` had [`redsync`](https://github.com/go-redsync/redsync), I wanted a much more simpler one and so with `redislock`.
 
 ## Features
 
@@ -20,7 +20,7 @@ I came across a concurrency issue when multiple clients were accessing single re
 
 ## Examples
 
-Check out examples in for [`garyburd`](./examples/garyburd) and [`go-redis`](./examples/goredis) clients.
+Check out examples in for [`redigo`](./examples/redigo) and [`go-redis`](./examples/goredis) clients.
 
 ## Documentation
 

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/dineshgowda24/redislock"
-	garyburd "github.com/dineshgowda24/redislock/examples/garyburd/redisclient"
-	"github.com/garyburd/redigo/redis"
+	redigoclient "github.com/dineshgowda24/redislock/examples/redigo/redisclient"
+	"github.com/gomodule/redigo/redis"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	// Create a new lock client.
-	locker := redislock.New(garyburd.NewRedisLockClient(pool))
+	locker := redislock.New(redigoclient.NewRedisLockClient(pool))
 
 	// Try to obtain lock.
 	lock, err := locker.Obtain("my-key", 100*time.Millisecond, nil)

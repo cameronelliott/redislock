@@ -1,10 +1,10 @@
-package garyburd
+package gomodule
 
 import (
 	"time"
 
 	"github.com/dineshgowda24/redislock"
-	"github.com/garyburd/redigo/redis"
+	"github.com/gomodule/redigo/redis"
 )
 
 type RedisLockClient struct {

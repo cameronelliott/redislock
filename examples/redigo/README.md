@@ -1,4 +1,4 @@
-# Garyburd redigo
+# gomodule redigo
 
 ```
 type RedisLockClient struct {

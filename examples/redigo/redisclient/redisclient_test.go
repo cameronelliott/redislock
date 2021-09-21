@@ -1,4 +1,4 @@
-package garyburd_test
+package gomodule_test
 
 import (
 	"math/rand"
@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/dineshgowda24/redislock"
-	garyburd "github.com/dineshgowda24/redislock/examples/garyburd/redisclient"
-	"github.com/garyburd/redigo/redis"
+	redigoclient "github.com/dineshgowda24/redislock/examples/redigo/redisclient"
+	"github.com/gomodule/redigo/redis"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -213,7 +213,7 @@ func TestSuite(t *testing.T) {
 }
 
 var redisPool *redis.Pool
-var redisClient *garyburd.RedisLockClient
+var redisClient *redigoclient.RedisLockClient
 var _ = BeforeSuite(func() {
 	redisPool = &redis.Pool{
 		MaxIdle:     3,
@@ -226,7 +226,7 @@ var _ = BeforeSuite(func() {
 	conn := redisPool.Get()
 	defer conn.Close()
 	Expect(conn.Err()).To(Succeed())
-	redisClient = garyburd.NewRedisLockClient(redisPool)
+	redisClient = redigoclient.NewRedisLockClient(redisPool)
 })
 
 var _ = AfterSuite(func() {

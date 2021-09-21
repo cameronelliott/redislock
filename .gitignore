@@ -1,2 +1,3 @@
-examples/garyburd/vendor
+examples/redigo/vendor
 examples/goredis/vendor
+examples/redigo/gomodule
