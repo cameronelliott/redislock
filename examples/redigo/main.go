@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/dineshgowda24/redislock"
-	redigoclient "github.com/dineshgowda24/redislock/examples/redigo/redisclient"
+	"github.com/cameronelliott/redislock"
+	redigoclient "github.com/cameronelliott/redislock/examples/redigo/redisclient"
 	"github.com/gomodule/redigo/redis"
 )
 

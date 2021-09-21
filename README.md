@@ -1,12 +1,14 @@
 # redislock
 
-[![Build Status](https://travis-ci.com/dineshgowda24/redislock.svg)](https://travis-ci.com/dineshgowda24/redislock)
-[![GoDoc](https://godoc.org/github.com/dineshgowda24/redislock?status.png)](http://godoc.org/github.com/dineshgowda24/redislock)
-[![Go Report Card](https://goreportcard.com/badge/github.com/dineshgowda24/redislock)](https://goreportcard.com/report/github.com/dineshgowda24/redislock)
+This package is originally by https://github.com/dineshgowda24  
+Thank you to Dinesh for creating this.
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Simplified distributed locking implementation using [Redis](http://redis.io/topics/distlock).
 For more information, please see examples.
+
+This intro is written by Dinesh.
 
 ## Motivation
 
@@ -24,7 +26,7 @@ Check out examples in for [`redigo`](./examples/redigo) and [`go-redis`](./examp
 
 ## Documentation
 
-Full documentation is available on [GoDoc](http://godoc.org/github.com/dineshgowda24/redislock)
+Full documentation is available on [GoDoc](http://godoc.org/github.com/cameronelliott/redislock)
 
 ## Contribution
 

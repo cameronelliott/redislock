@@ -3,7 +3,7 @@ package goredis
 import (
 	"time"
 
-	"github.com/dineshgowda24/redislock"
+	"github.com/cameronelliott/redislock"
 	"github.com/go-redis/redis/v7"
 )
 

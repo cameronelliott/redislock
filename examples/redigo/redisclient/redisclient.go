@@ -3,7 +3,7 @@ package gomodule
 import (
 	"time"
 
-	"github.com/dineshgowda24/redislock"
+	"github.com/cameronelliott/redislock"
 	"github.com/gomodule/redigo/redis"
 )
 
